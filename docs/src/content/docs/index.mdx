@@ -1,0 +1,30 @@
+---
+title: starlight-theme-flexoki
+description: Starlight theme based on the Flexoki colour palette 
+head:
+  - tag: title
+    content: starlight-theme-flexoki
+template: splash
+editUrl: false
+hero:
+  tagline: Starlight theme based on the Flexoki colour palette 
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /getting-started/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components'
+
+## Next steps
+
+<CardGrid stagger>
+  <Card title="Install the plugin" icon="puzzle">
+    Check the [getting started guide](/getting-started/) for installation instructions.
+  </Card>
+  <Card title="Configure the plugin" icon="setting">
+    Edit your config in the `astro.config.mjs` file.
+  </Card>
+</CardGrid>

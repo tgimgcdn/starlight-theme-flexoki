@@ -1,0 +1,31 @@
+{
+  "name": "starlight-theme-flexoki",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Starlight theme based on the Flexoki colour palette ",
+  "author": "delucis",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "@astrojs/starlight": "^0.31.1",
+    "astro": "^5.2.6"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.31"
+  },
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/delucis/starlight-theme-flexoki",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/delucis/starlight-theme-flexoki.git",
+    "directory": "packages/starlight-theme-flexoki"
+  },
+  "bugs": "https://github.com/delucis/starlight-theme-flexoki/issues"
+}
