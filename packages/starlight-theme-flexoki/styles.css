@@ -549,8 +549,7 @@ h1#_top,
 }
 
 /* Badges */
-.sl-badge,
-.sl-markdown-content .sl-badge {
+.sl-badge:is(.sl-badge) {
 	font-family: var(--__sl-font);
 	font-weight: 500;
 	line-height: 1;
@@ -615,7 +614,7 @@ h1#_top,
 	}
 }
 
-.sidebar-content a[aria-current='page'] > .sl-badge {
+.sidebar-content a[aria-current='page'] > .sl-badge:is(.sl-badge) {
 	--sl-color-bg-badge: var(--sl-badge-default-bg);
 	--sl-color-border-badge: var(--sl-badge-default-border);
 	color: var(--sl-badge-default-text);
