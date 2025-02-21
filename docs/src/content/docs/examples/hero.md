@@ -1,9 +1,6 @@
 ---
 title: Hero
 template: splash
-editUrl: false
-prev: false
-next: false
 hero:
   title: Lorem Ipsum
   tagline: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -21,4 +18,5 @@ hero:
     - text: Morbi in
       link: /getting-started/
       icon: external
+      variant: minimal
 ---
