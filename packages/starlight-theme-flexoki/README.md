@@ -1,15 +1,12 @@
 # `starlight-theme-flexoki`
 
-Starlight theme based on the Flexoki colour palette 
+[Starlight](https://starlight.astro.build/) theme based on the [Flexoki](https://stephango.com/flexoki) colour palette
 
 ## Documentation
 
-Want to get started immediately?
-
-Check out the `starlight-theme-flexoki` getting started guide.
+**Ready to go?**  
+Read the Starlight Flexoki [“Getting started”](https://delucis.github.io/starlight-theme-flexoki/) guide.
 
 ## License
 
-Licensed under the MIT License, Copyright © delucis.
-
-See [LICENSE](https://github.com/delucis/starlight-theme-flexoki/blob/main/LICENSE) for more information.
+[MIT](https://github.com/delucis/starlight-theme-flexoki/blob/main/LICENSE)

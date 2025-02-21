@@ -22,7 +22,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"homepage": "https://github.com/delucis/starlight-theme-flexoki",
+	"homepage": "https://delucis.github.io/starlight-theme-flexoki/",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/delucis/starlight-theme-flexoki.git",
