@@ -358,13 +358,18 @@ mobile-starlight-toc {
 	}
 }
 
+:root {
+	/* Base font size. Theoretical range: 14px–20px. In practice: ~15px–20px. */
+	--sl-flexoki-text-base: min(calc(0.875rem + 0.3vw), 1.25rem);
+	--sl-flexoki-text-sm: calc(0.875 * var(--sl-flexoki-text-base));
+}
+
 .content-panel {
 	/* Responsive text sizes for main content. */
 	--sl-text-2xs: calc(0.75 * var(--sl-text-base));
 	--sl-text-xs: calc(0.8125 * var(--sl-text-base));
-	--sl-text-sm: calc(0.875 * var(--sl-text-base));
-	/* Base font size. Theoretical range: 14px–20px. In practice: ~15px–20px. */
-	--sl-text-base: min(calc(0.875rem + 0.3vw), 1.25rem);
+	--sl-text-sm: var(--sl-flexoki-text-sm);
+	--sl-text-base: var(--sl-flexoki-text-base);
 	--sl-text-lg: calc(1.125 * var(--sl-text-base));
 	--sl-text-xl: calc(1.25 * var(--sl-text-base));
 	--sl-text-2xl: calc(1.5 * var(--sl-text-base));

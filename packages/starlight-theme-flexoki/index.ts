@@ -31,8 +31,8 @@ export default function starlightThemeFlexoki(): StarlightPlugin {
 							borderRadius: '0.25rem',
 							borderColor: ['var(--sl-color-gray-6)', 'var(--sl-color-gray-7)'],
 							borderWidth: '0.1875rem',
-							uiFontSize: 'var(--sl-text-sm)',
-							codeFontSize: 'var(--sl-text-code)',
+							uiFontSize: 'var(--sl-flexoki-text-sm)',
+							codeFontSize: 'var(--sl-flexoki-text-sm)',
 
 							// Reduce padding slightly to counteract thicker borders.
 							uiPaddingBlock: '0.15625rem' /** 2.5px */,
