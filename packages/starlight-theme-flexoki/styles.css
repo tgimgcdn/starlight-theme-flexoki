@@ -654,50 +654,6 @@ footer {
 	}
 }
 
-/* Pagination links */
-.pagination-links {
-	display: flex;
-	border-top: 1px solid var(--sl-flexoki-shadow-shade);
-	padding-block: 2rem;
-
-	a {
-		border: 0;
-		border-radius: 0;
-		padding: 0;
-		align-items: flex-start;
-		font-size: var(--sl-text-body-sm);
-		--link-color: var(--sl-color-gray-3);
-		color: var(--sl-color-gray-3);
-		box-shadow: none;
-
-		&:hover,
-		&:focus-visible {
-			--link-color: var(--sl-color-text);
-			outline-offset: 0.375rem;
-		}
-
-		svg {
-			position: absolute;
-			font-size: 1.5em;
-			margin-top: 0.1em;
-			margin-inline: -0.1875em;
-			color: var(--link-color);
-		}
-
-		& > span {
-			padding-inline: 1.25rem;
-			color: var(--link-color);
-		}
-		.link-title {
-			display: inline-block;
-			margin-inline: -1.25rem;
-			font-size: var(--sl-text-lg);
-			font-weight: 600;
-			color: var(--link-color);
-		}
-	}
-}
-
 /* Search modal */
 #starlight__search {
 	--sl-search-corners: calc(0.75rem * var(--pagefind-ui-scale));

@@ -16,16 +16,28 @@ export default function starlightThemeFlexoki({
 		hooks: {
 			setup({ config, updateConfig, addIntegration }) {
 				// Register the theme’s custom CSS, including any user CSS *after* our own.
-				const newConfig: Partial<StarlightUserConfig> = {
+				const newConfig = {
 					customCss: [
 						`starlight-theme-flexoki/accent-themes/${accentColor}.css`,
 						'starlight-theme-flexoki/styles.css',
 						...(config.customCss || []),
 					],
-				};
+					components: {
+						...config.components,
+					},
+					expressiveCode: {},
+				} satisfies Partial<StarlightUserConfig>;
+
+				if (!config.components?.Pagination) {
+					newConfig.components.Pagination = fileURLToPath(
+						new URL('./overrides/Pagination.astro', import.meta.url)
+					);
+				}
 
 				// As long as the user hasn’t disabled Expressive Code, apply our styles.
-				if (config.expressiveCode !== false) {
+				if (config.expressiveCode === false) {
+					newConfig.expressiveCode = false;
+				} else {
 					const userExpressiveCodeConfig =
 						!config.expressiveCode || config.expressiveCode === true ? {} : config.expressiveCode;
 
