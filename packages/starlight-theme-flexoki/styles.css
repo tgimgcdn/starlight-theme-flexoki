@@ -712,3 +712,32 @@ footer {
 		outline-width: 2px !important;
 	}
 }
+
+/* Banner */
+.sl-banner {
+	margin: 1rem var(--sl-nav-pad-x);
+	box-shadow: none;
+	border-radius: 999rem;
+	background-color: var(--sl-color-accent-low);
+
+	&,
+	a {
+		color: var(--sl-color-text);
+	}
+	a:hover {
+		color: var(--sl-color-text-accent);
+	}
+
+	@media (min-width: 50rem) {
+		margin-top: 2rem;
+
+		[data-has-sidebar] & {
+			margin-inline-start: 0;
+		}
+	}
+	@media (min-width: 72rem) {
+		[data-has-toc] & {
+			margin-inline-end: 0;
+		}
+	}
+}
