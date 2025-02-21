@@ -389,6 +389,12 @@ mobile-starlight-toc {
 	--sl-text-h5: var(--sl-text-lg);
 }
 
+/* Headings */
+h1#_top,
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
+	font-weight: 500;
+}
+
 .sl-markdown-content {
 	font-size: var(--sl-text-body);
 
@@ -417,19 +423,16 @@ mobile-starlight-toc {
 		+ :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
 		margin-top: 1em;
 	}
-
 	/* Headings after non-headings have more spacing. */
 	:not(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
 		margin-top: 1.5em;
 	}
-
 	li + li:not(:where(.not-content *)),
 	dt + dt:not(:where(.not-content *)),
 	dt + dd:not(:where(.not-content *)),
 	dd + dd:not(:where(.not-content *)) {
 		margin-top: 0.25em;
 	}
-
 	li
 		> :last-child:not(
 			li,
@@ -448,66 +451,60 @@ mobile-starlight-toc {
 	li > :nth-last-child(2):is(starlight-tabs) {
 		margin-bottom: 1.25em;
 	}
-}
 
-/* Asides */
-.starlight-aside {
-	border: 0;
-	border-radius: 0.25rem;
-}
-.starlight-aside__title {
-	font-size: var(--sl-text-base);
-	font-weight: 500;
-}
-.starlight-aside__icon {
-	font-size: var(--sl-text-lg);
-}
-
-/* Headings */
-h1#_top,
-.sl-markdown-content :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
-	font-weight: 500;
-}
-
-/* Steps */
-.sl-steps {
-	& > li::before {
-		box-shadow: none;
-		background-color: var(--sl-color-gray-6);
-	}
-	& > li::after {
-		background-color: var(--sl-flexoki-shadow-shade);
-	}
-}
-
-/* Cards */
-.card {
-	border: 0;
-	border-radius: 0.25rem;
-	background-color: var(--sl-color-gray-7, var(--sl-color-gray-6));
-	padding: 1.5em;
-
-	.title {
-		font-size: 1em;
-		gap: 0.5em;
-	}
-
-	.icon {
+	/* Asides */
+	.starlight-aside {
 		border: 0;
-		padding: 0;
-		background-color: transparent;
+		border-radius: 0.25rem;
 	}
-}
+	.starlight-aside__title {
+		font-size: var(--sl-text-base);
+		font-weight: 500;
+	}
+	.starlight-aside__icon {
+		font-size: var(--sl-text-lg);
+	}
 
-/* File Tree */
-starlight-file-tree {
-	border: 0;
-	border-radius: 0.25rem;
-	background-color: var(--sl-color-gray-7, var(--sl-color-gray-6));
+	/* Steps */
+	.sl-steps {
+		& > li::before {
+			box-shadow: none;
+			background-color: var(--sl-color-gray-6);
+		}
+		& > li::after {
+			background-color: var(--sl-flexoki-shadow-shade);
+		}
+	}
+
+	/* Cards */
+	.card {
+		border: 0;
+		border-radius: 0.25rem;
+		background-color: var(--sl-color-gray-7, var(--sl-color-gray-6));
+		padding: 1.5em;
+
+		.title {
+			font-size: 1em;
+			gap: 0.5em;
+		}
+
+		.icon {
+			border: 0;
+			padding: 0;
+			background-color: transparent;
+		}
+	}
+
+	/* File Tree */
+	starlight-file-tree {
+		border: 0;
+		border-radius: 0.25rem;
+		background-color: var(--sl-color-gray-7, var(--sl-color-gray-6));
+	}
 }
 
 /* Badges */
-.sl-badge {
+.sl-markdown-content .sl-badge {
 	font-family: var(--__sl-font);
 	font-weight: 500;
 	line-height: 1;
