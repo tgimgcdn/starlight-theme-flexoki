@@ -19,7 +19,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Start Here',
-					items: ['getting-started', 'configuration', 'demo'],
+					items: ['getting-started', 'configuration'],
 				},
 				{ label: 'Examples', autogenerate: { directory: 'examples' } },
 			],
