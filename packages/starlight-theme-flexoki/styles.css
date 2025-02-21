@@ -439,13 +439,9 @@ mobile-starlight-toc {
 			code,
 			br,
 			:where(.not-content *)
-		) {
+		),
+	li > :nth-last-child(2):is(starlight-tabs) {
 		margin-bottom: 1.25em;
-
-		/* The :last-child can be a <script> element, in which case this is needed to force the margin to apply. */
-		&:where(script) {
-			display: block;
-		}
 	}
 }
 
