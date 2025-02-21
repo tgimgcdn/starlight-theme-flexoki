@@ -8,13 +8,29 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Starlight Flexoki',
-			description: 'Starlight theme based on the Flexoki colour palette',
+			description: 'A warm and friendly Starlight theme based on the Flexoki colour palette',
 			social: {
 				github: 'https://github.com/delucis/starlight-theme-flexoki',
 			},
 			editLink: {
 				baseUrl: 'https://github.com/delucis/starlight-theme-flexoki/edit/main/docs/',
 			},
+			head: [
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image',
+						content: 'https://delucis.github.io/starlight-theme-flexoki/og.png',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image:alt',
+						content: 'Starlight Flexoki: A warm and friendly theme for your docs',
+					},
+				},
+			],
 			plugins: [starlightThemeFlexoki()],
 			sidebar: [
 				{

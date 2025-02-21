@@ -1,13 +1,23 @@
 ---
 title: Starlight Flexoki
-description: Starlight theme based on the Flexoki colour palette
+description: A warm and friendly Starlight theme based on the Flexoki colour palette
 head:
   - tag: title
     content: Starlight Flexoki
+  - tag: style
+    content: >-
+      .hero-html {
+        --size: min(10rem, calc(5rem + 6vw));
+        font-size: var(--size);
+        justify-content: center;
+        z-index: -1;
+      }
 template: splash
 editUrl: false
 hero:
-  tagline: Starlight theme based on the Flexoki colour palette
+  tagline: A warm and friendly Starlight theme based on the Flexoki colour palette
+  image:
+    html: ☺️
   actions:
     - text: Get Started
       link: /starlight-theme-flexoki/getting-started/
