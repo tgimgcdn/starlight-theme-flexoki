@@ -679,3 +679,18 @@ h1#_top,
 		}
 	}
 }
+
+/* Search modal */
+#starlight__search {
+	--sl-search-corners: calc(0.75rem * var(--pagefind-ui-scale));
+
+	.pagefind-ui__result-inner {
+		gap: 0;
+	}
+
+	.pagefind-ui__result-title,
+	.pagefind-ui__result-nested {
+		outline-offset: -2px;
+		outline-width: 2px !important;
+	}
+}
