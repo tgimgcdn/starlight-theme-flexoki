@@ -482,7 +482,7 @@ h1#_top,
 			:where(.not-content *)
 		),
 	li > :nth-last-child(2):is(starlight-tabs) {
-		margin-bottom: 1.25em;
+		margin-bottom: 1.75em;
 	}
 
 	/* Asides */
