@@ -1,30 +1,57 @@
 ---
 title: Starlight Flexoki
-description: Starlight theme based on the Flexoki colour palette 
+description: Starlight theme based on the Flexoki colour palette
 head:
   - tag: title
     content: Starlight Flexoki
 template: splash
 editUrl: false
 hero:
-  tagline: Starlight theme based on the Flexoki colour palette 
-  image:
-    file: ../../assets/houston.webp
+  tagline: Starlight theme based on the Flexoki colour palette
   actions:
     - text: Get Started
       link: /getting-started/
       icon: right-arrow
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components'
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Features
+
+<CardGrid>
+
+  <Card title="Flexoki colour theme" icon="seti:svg">
+
+    Dark and light colour schemes based on Flexoki’s warm and inky shades, including matching syntax highlighting.
+
+  </Card>
+  
+  <Card title="Readable design" icon="seti:font">
+
+    A simple design with minimal clutter, featuring large body text and clear details.
+
+  </Card>
+
+</CardGrid>
 
 ## Next steps
 
-<CardGrid stagger>
-  <Card title="Install the plugin" icon="puzzle">
-    Check the [getting started guide](/getting-started/) for installation instructions.
+<CardGrid>
+  
+  <Card title="Install the theme" icon="puzzle">
+    
+    ```sh frame="none"
+    npm install starlight-theme-flexoki
+    ```
+    
+    See the [“Getting started”](/getting-started/) guide for installation instructions.
+  
   </Card>
-  <Card title="Configure the plugin" icon="setting">
-    Edit your config in the `astro.config.mjs` file.
+  
+  <Card title="Configure the theme" icon="setting">
+  
+    Choose from eight accent colours in the plugin options in `astro.config.mjs` file.
+  
   </Card>
+
 </CardGrid>
