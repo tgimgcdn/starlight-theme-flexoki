@@ -636,6 +636,12 @@ h1#_top,
 	}
 }
 
+footer {
+	.meta {
+		font-size: var(--sl-text-xs);
+	}
+}
+
 /* Pagination links */
 .pagination-links {
 	display: flex;
