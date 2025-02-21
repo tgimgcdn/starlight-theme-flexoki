@@ -517,7 +517,7 @@ h1#_top,
 		padding: 1.5em;
 
 		.title {
-			font-size: 1em;
+			font-size: var(--sl-text-body);
 			gap: 0.5em;
 		}
 
@@ -525,6 +525,18 @@ h1#_top,
 			border: 0;
 			padding: 0;
 			background-color: transparent;
+		}
+	}
+
+	/* Link Cards */
+	.sl-link-card {
+		box-shadow: none;
+
+		.title {
+			font-size: var(--sl-text-body);
+		}
+		.description {
+			font-size: var(--sl-text-sm);
 		}
 	}
 
