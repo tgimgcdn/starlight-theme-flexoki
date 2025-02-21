@@ -7,7 +7,8 @@
 	"type": "module",
 	"exports": {
 		".": "./index.ts",
-		"./styles.css": "./styles.css"
+		"./styles.css": "./styles.css",
+		"./accent-themes/*": "./accent-themes/*"
 	},
 	"devDependencies": {
 		"@astrojs/starlight": "^0.31.1",

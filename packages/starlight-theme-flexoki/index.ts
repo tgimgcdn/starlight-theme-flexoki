@@ -4,14 +4,24 @@ import darkTheme from './syntax-themes/flexoki-dark.json';
 import lightTheme from './syntax-themes/flexoki-light.json';
 import type { AstroIntegration } from 'astro';
 
-export default function starlightThemeFlexoki(): StarlightPlugin {
+interface StarlightThemeFlexokiOptions {
+	accentColor?: 'red' | 'orange' | 'yellow' | 'green' | 'cyan' | 'blue' | 'purple' | 'magenta';
+}
+
+export default function starlightThemeFlexoki({
+	accentColor = 'cyan',
+}: StarlightThemeFlexokiOptions = {}): StarlightPlugin {
 	return {
 		name: 'starlight-theme-flexoki',
 		hooks: {
 			setup({ config, updateConfig, addIntegration }) {
 				// Register the theme’s custom CSS, including any user CSS *after* our own.
 				const newConfig: Partial<StarlightUserConfig> = {
-					customCss: ['starlight-theme-flexoki/styles.css', ...(config.customCss || [])],
+					customCss: [
+						`starlight-theme-flexoki/accent-themes/${accentColor}.css`,
+						'starlight-theme-flexoki/styles.css',
+						...(config.customCss || []),
+					],
 				};
 
 				// As long as the user hasn’t disabled Expressive Code, apply our styles.

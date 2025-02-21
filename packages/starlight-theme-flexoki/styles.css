@@ -147,10 +147,6 @@
 	--sl-color-red: var(--color-red-300);
 	--sl-color-red-high: var(--color-red-150);
 
-	--sl-color-accent-low: var(--color-cyan-950);
-	--sl-color-accent: var(--color-cyan-300);
-	--sl-color-accent-high: var(--color-cyan-150);
-
 	--sl-color-text: var(--sl-color-gray-2);
 	--sl-color-text-accent: var(--sl-color-accent-high);
 	--sl-color-text-invert: var(--sl-color-black);
@@ -206,10 +202,6 @@
 	--sl-color-red-high: var(--color-red-700);
 	--sl-color-red: var(--color-red-700);
 	--sl-color-red-low: var(--color-red-50);
-
-	--sl-color-accent-high: var(--color-cyan-700);
-	--sl-color-accent: var(--color-cyan-700);
-	--sl-color-accent-low: var(--color-cyan-50);
 
 	--sl-color-text-accent: var(--sl-color-accent);
 	--sl-color-text-invert: var(--sl-color-black);
