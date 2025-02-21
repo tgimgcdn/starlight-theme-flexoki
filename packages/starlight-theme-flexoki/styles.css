@@ -504,6 +504,7 @@ h1#_top,
 }
 
 /* Badges */
+.sl-badge,
 .sl-markdown-content .sl-badge {
 	font-family: var(--__sl-font);
 	font-weight: 500;
