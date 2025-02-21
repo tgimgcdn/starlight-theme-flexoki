@@ -8,15 +8,15 @@ hero:
     file: ../../../assets/hero.webp
   actions:
     - text: Phasellus tincidunt
-      link: /getting-started/
+      link: /starlight-theme-flexoki/getting-started/
       icon: right-arrow
       variant: primary
     - text: Vestibulum
-      link: /getting-started/
+      link: /starlight-theme-flexoki/getting-started/
       icon: right-arrow
       variant: secondary
     - text: Morbi in
-      link: /getting-started/
+      link: /starlight-theme-flexoki/getting-started/
       icon: external
       variant: minimal
 ---
