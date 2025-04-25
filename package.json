@@ -2,7 +2,7 @@
   "name": "starlight-theme-flexoki-monorepo",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "Starlight theme based on the Flexoki colour palette ",
+  "description": "Starlight theme based on the Flexoki colour palette",
   "author": "delucis",
   "type": "module",
   "engines": {
@@ -22,6 +22,7 @@
   },
   "scripts": {
     "ci-version": "changeset version && pnpm install --no-frozen-lockfile",
-		"ci-publish": "changeset publish"
+    "ci-publish": "changeset publish",
+    "build": "astro build"
   }
 }
