@@ -2,13 +2,13 @@
   "name": "starlight-theme-flexoki-monorepo",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "Starlight theme based on the Flexoki colour palette ",
+  "description": "Starlight theme based on the Flexoki colour palette",
   "author": "delucis",
   "type": "module",
   "engines": {
     "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
   },
-  "packageManager": "npm@9.6.7",  
+  "packageManager": "npm@9.6.7",
   "private": true,
   "homepage": "https://github.com/delucis/starlight-theme-flexoki",
   "repository": {
@@ -19,13 +19,13 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.28.1",
-    "astro": "^2.0.0"  // 添加 Astro 作为依赖
+    "astro": "^2.0.0"
   },
   "scripts": {
-    "ci-version": "changeset version && npm install",  
+    "ci-version": "changeset version && npm install",
     "ci-publish": "changeset publish",
-    "build": "astro build",  
-    "dev": "astro dev",  
-    "preview": "astro preview"  
+    "build": "astro build",
+    "dev": "astro dev",
+    "preview": "astro preview"
   }
 }
